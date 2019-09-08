@@ -438,12 +438,12 @@ dags:
   git:
     ##
     ## url to clone the git repository
-    url: https://github.com/prabhatsharma/airflow-dags
+    url: https://github.com/gubyb/airflow
     ##
     ## branch name, tag or sha1 to reset to
     ref: master
     ## pre-created secret with key, key.pub and known_hosts file for private repos
-    secret: {}
+    secret: {/Users/gustav/.ssh/id_rsa.pub}
   initContainer:
     ## Fetch the source code when the pods starts
     enabled: false
