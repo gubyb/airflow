@@ -443,10 +443,10 @@ dags:
     ## branch name, tag or sha1 to reset to
     ref: master
     ## pre-created secret with key, key.pub and known_hosts file for private repos
-    secret: {/Users/gustav/.ssh/id_rsa.pub}
+    secret: {}
   initContainer:
     ## Fetch the source code when the pods starts
-    enabled: false
+    enabled: true
     ## Image for the init container (any image with git will do)
     image:
       ## docker-airflow image
